@@ -1,11 +1,10 @@
-
 def bubble_sort(array)
   swap = true
   while swap
     swap = false
-  index = 0
+    index = 0
 
-  (array.size - 1).times do |index|
+    (array.size - 1).times do |index|
       if array[index] > array[index + 1]
         array[index], array[index + 1] = array[index + 1], array[index]
         swap = true
@@ -17,9 +16,7 @@ def bubble_sort(array)
   p array
 end
 
-
 bubble_sort([3, 4, 5, 2, 1])
-
 
 def bubble_sort_by(array)
   swap = true
@@ -40,5 +37,4 @@ end
 
 bubble_sort_by(%w[hey kenny test world hi]) do |left, right|
   (left.length - right.length).positive?
-
 end
