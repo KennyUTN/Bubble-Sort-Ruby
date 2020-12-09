@@ -25,7 +25,7 @@ def bubble_sort_by(array)
     swap = false
     (array.size - 1).times do |i|
       comparator = yield array[i], array[i + 1]
-      if comparator == true
+      if comparator.positive?
         array[i], array[i + 1] = array[i + 1], array[i]
         swap = true
       end
@@ -36,5 +36,5 @@ def bubble_sort_by(array)
 end
 
 bubble_sort_by(%w[hey kenny test world hi]) do |left, right|
-  (left.length - right.length).positive?
+  left.length - right.length
 end
