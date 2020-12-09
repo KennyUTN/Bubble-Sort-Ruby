@@ -14,6 +14,7 @@ def bubble_sort(array)
   end
 
   p array
+  array
 end
 
 bubble_sort([3, 4, 5, 2, 1])
@@ -31,6 +32,7 @@ def bubble_sort_by(array)
     end
   end
   print array
+  array
 end
 
 bubble_sort_by(%w[hey kenny test world hi]) do |left, right|
