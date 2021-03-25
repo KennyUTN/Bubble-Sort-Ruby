@@ -12,6 +12,7 @@ The following is a telegram bot that sends you cheap philosophy quotes that are 
 ### Prerequisites
 
 - Telegram Account
+- Terminal
 
 
 ### Setup
