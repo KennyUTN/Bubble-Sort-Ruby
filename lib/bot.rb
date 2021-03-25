@@ -19,12 +19,13 @@ Telegram::Bot::Client.run(token) do |bot|
                 "I have not failed. I've just found 10,000 ways that won't work.",
                 "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time."].sample
 
-    message = "My fellow friend, send me a :) or :( so you can recieve a proper quote"
+    message = "My fellow friend, send :'Im Happy' for a happy quote.
+      Otherwhise send 'Im Sad' so you can recieve a proper quote"
 
-    if msg.text == ':grinning:' || msg.text == ':slight_smile:' then message = happyquote
+    if msg.text == 'Im Happy' then message = happyquote
     end
 
-    if msg.text == ':worried:' || msg.text == ':slight_frown:' then message = sadquote
+    if msg.text == 'Im Sad' then message = sadquote
     end
 
 
